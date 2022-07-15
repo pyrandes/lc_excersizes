@@ -20,11 +20,11 @@ public class RotateImage {
   
   public void mirrorDiagonal(int[][] matrix) 
   {
-    for(int i = 0; i < matrix.length; i++) {
-      for(int j = 0; j < i; j++) {
-        int tmp = matrix[j][i];
-        matrix[j][i] = matrix[i][j];        
-        matrix[i][j] = tmp;
+    for(int r = 0; r < matrix.length; r++) {
+      for(int c = 0; c < r; c++) {
+        int tmp = matrix[c][r];
+        matrix[c][r] = matrix[r][c];        
+        matrix[r][c] = tmp;
       }
     }
   }     
