@@ -22,4 +22,9 @@ class MultiplyStringsTest {
   void test2() {
     assertEquals("56088", ms.multiply("123", "456"));
   }
+  
+  @Test
+  void test3() {
+    assertEquals("121932631112635269", ms.multiply("123456789", "987654321"));
+  }
 }
